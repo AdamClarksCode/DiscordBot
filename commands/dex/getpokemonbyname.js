@@ -16,8 +16,10 @@ class getpokemonbynamecommand extends commando.Command{
     async run(message, args) {
         P.getPokemonByName("pikachu")
             .then(function(response) {
-                console.log(JSON.stringify(response, null, 2));
-                message.reply(JSON.stringify(response, null, 2));
+                var thePokemon = JSON.stringify(response, null, 2)
+                thePokemon = thePokemon.substring(0, 998)
+                console.log(thePokemon);
+                message.reply(thePokemon);
             })
             .catch(function(error) {
                 console.log('There was an ERROR: ', error);
