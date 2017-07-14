@@ -11,5 +11,7 @@ bot.on("message", async message => {
     input = input.toLowerCase();
     if(input.indexOf("gitgud") != -1 || input.indexOf("git gud") != -1 || input.indexOf("dark souls") != -1) message.reply("https://media.tenor.com/images/628f092d12cce4af0e12ff4e94137730/tenor.gif");
     if(input.indexOf("mlg") != -1)  message.reply("http://i1.kym-cdn.com/photos/images/newsfeed/000/793/372/fe7.gif");
+    if(input.indexOf("ree") != -1) message.reply("http://i2.kym-cdn.com/photos/images/newsfeed/000/829/739/fe2.gif");
+    if(input.indexOf("nito") != -1) message.reply("http://imgur.com/6iqZLHU");
 });
 bot.login('MzMzOTc1Mjk1MTM0NzkzNzI4.DEUl1g.VtpsiFsO1eyPP1fYHxlU5JnkeRs');
